@@ -1,0 +1,25 @@
+
+name: Test Bash Scripts
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-scripts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Test System Health Script
+        run: |
+          chmod +x system_health.sh
+          bash system_health.sh
+
+      - name: Test Application Health Script
+        run: |
+          chmod +x application_health.sh
+          bash application_health.sh
