@@ -17,7 +17,7 @@ spec:
         - name: wisecow
           image: suriyakalimuthu/wisecow:latest
           imagePullPolicy: Always
-command: ["bash", "./wisecow.sh"]
+          command: ["bash", "./wisecow.sh"]
           ports:
             - containerPort: 4499
 ---
