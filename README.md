@@ -112,7 +112,9 @@ This workflow builds the Docker image and pushes it to Docker Hub when changes a
 - Docker image build and Docker Hub push: Completed
 - Bash scripts added: Completed
 - GitHub Actions Bash workflow: Successful
-- Kubernetes deployment: Pending cluster deployment and verification
+- Kubernetes deployment: Completed
+- Kubernetes Service verification: Completed
+- Application HTTP test: Successful (HTTP 200 OK)
 - TLS configuration: Pending
 - Continuous deployment: Pending
 
