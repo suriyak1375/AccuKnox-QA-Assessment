@@ -33,14 +33,20 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 4499
+
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: wisecow-ingress
 spec:
+  tls:
+    - hosts:
+        - wisecow.local
+      secretName: wisecow-tls
   rules:
-    - http:
+    - host: wisecow.local
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -49,3 +55,4 @@ spec:
                 name: wisecow-service
                 port:
                   number: 80
+
