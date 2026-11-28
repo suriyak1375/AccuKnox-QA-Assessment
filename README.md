@@ -115,7 +115,7 @@ This workflow builds the Docker image and pushes it to Docker Hub when changes a
 - Kubernetes deployment: Completed
 - Kubernetes Service verification: Completed
 - Application HTTP test: Successful (HTTP 200 OK)
-- TLS configuration: Pending
+- HTTPS endpoint test: Verified (HTTP/2 200; certificate validation not performed)
 - Continuous deployment: Pending
 
 ## Author
